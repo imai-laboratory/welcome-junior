@@ -1,0 +1,19 @@
+{
+  "name": "welcome-junior",
+  "version": "1.0.0",
+  "description": "webapge for recruiting rebels",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imai-laboratory/welcome-junior.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imai-laboratory/welcome-junior/issues"
+  },
+  "homepage": "https://github.com/imai-laboratory/welcome-junior#readme"
+}
