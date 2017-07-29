@@ -8,3 +8,8 @@ webpage for recruiting rebels
 - jQuery
 - Bootstrap
 - GitHub Pages
+
+## deploy
+```
+$ npm run deploy
+```

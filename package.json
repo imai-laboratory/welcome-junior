@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-scss": "node-sass styles/main.scss dist/main.css"
+    "build-scss": "node-sass styles/main.scss dist/main.css",
+    "deploy": "npm run build-scss && gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/imai-laboratory/welcome-junior#readme",
   "dependencies": {
+    "gh-pages": "^1.0.0",
     "node-sass": "^4.5.3"
   }
 }
