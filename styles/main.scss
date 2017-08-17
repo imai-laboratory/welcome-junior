@@ -1,5 +1,12 @@
 .container {
   width: 100%;
+  margin-top: 16px;
+
+  .section-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+  }
 }
 
 .green-background {
@@ -16,4 +23,98 @@
 
 .red-background {
   background: #e74c3c;
+}
+
+.row {
+  
+}
+
+.research {
+  .statement {
+    padding: 32px;
+    font-size: 20px;
+  }
+  .group-introduction {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  img {
+    width: 90%;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .group {
+    padding: 6px;
+  }
+  .group-statement {
+    p {
+      font-weight: 500;
+      font-size: 20px;
+    }
+  }
+  .picture {
+    padding: 16px;
+  }
+}
+
+.feature {
+  .col-md-4 {
+    padding: 16px;
+
+    .feature-panel {
+      transition: box-shadow 300ms 0s ease;
+      box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1);
+      height: 210px;
+      padding: 12px;
+
+      .feature-title {
+        font-size: 20px;
+        font-weight: 600;
+      }
+
+      &:hover {
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+}
+
+.cover {
+  .back {
+    .cover-image {
+      position: relative;
+
+      .image {
+        width: 60%;
+        float: right;
+        margin-top: 90px;
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.1);
+      }
+      .image-hidden {
+        width: 60%;
+        float: right;
+        margin-top: 90px;
+        position: absolute;
+        right: 0;
+        opacity: 0;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .front {
+    position: absolute;
+    padding: 60px;
+    p {
+      font-size: 60px;
+
+      strong {
+        color: #f44336;
+      }
+    }
+  }
 }
