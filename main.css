@@ -77,3 +77,28 @@
     font-size: 60px; }
     .cover .front p strong {
       color: #f44336; }
+
+.schedule .month {
+  font-size: 20px; }
+  @media (min-width: 992px) {
+    .schedule .month {
+      text-align: right; } }
+
+.schedule .right-column {
+  border-left: 1px solid; }
+
+.schedule .events {
+  padding: 16px; }
+  .schedule .events .event-name {
+    font-size: 20px;
+    font-weight: 500; }
+  .schedule .events ul {
+    margin: 0; }
+  .schedule .events img {
+    width: 60%; }
+
+.access {
+  text-align: center;
+  font-size: 20px; }
+  .access ul {
+    list-style: none; }
