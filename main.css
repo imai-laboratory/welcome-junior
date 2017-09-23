@@ -76,8 +76,14 @@ body {
 .cover .front {
   position: absolute;
   padding: 60px; }
+  @media (max-width: 767px) {
+    .cover .front {
+      padding: 30px; } }
   .cover .front p {
     font-size: 60px; }
+    @media (max-width: 767px) {
+      .cover .front p {
+        font-size: 21px; } }
     .cover .front p strong {
       color: #f44336; }
 
@@ -98,7 +104,10 @@ body {
   .schedule .events ul {
     margin: 0; }
   .schedule .events img {
-    width: 60%; }
+    width: 50%;
+    padding: 6px; }
+  .schedule .events .horizon img {
+    float: right; }
 
 .access {
   text-align: center;
