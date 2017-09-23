@@ -113,7 +113,15 @@ body {
   .front {
     position: absolute;
     padding: 60px;
+    @media (max-width: 767px) {
+      padding: 30px;
+    }
+
     p {
+      @media (max-width: 767px) {
+        font-size: 21px;
+      }
+
       font-size: 60px;
 
       strong {
