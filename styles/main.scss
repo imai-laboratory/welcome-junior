@@ -148,7 +148,14 @@ body {
     }
 
     img {
-      width: 60%;
+      width: 50%;
+      padding: 6px;
+    }
+
+    .horizon {
+      img {
+        float: right;
+      }
     }
   }
 }
