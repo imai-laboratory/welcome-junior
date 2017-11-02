@@ -99,6 +99,9 @@ body {
 .schedule .right-column {
   border-left: 1px solid; }
 
+.schedule .tour-schedule {
+  margin: 3px; }
+
 .schedule .events {
   padding: 16px; }
   .schedule .events .event-name {
