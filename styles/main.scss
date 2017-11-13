@@ -117,6 +117,8 @@ body {
   .front {
     position: absolute;
     padding: 60px;
+    -webkit-text-stroke: 1px #fff;
+    font-weight: 500;
     @media (max-width: 767px) {
       padding: 30px;
     }
