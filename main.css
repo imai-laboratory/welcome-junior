@@ -78,7 +78,9 @@ body {
 
 .cover .front {
   position: absolute;
-  padding: 60px; }
+  padding: 60px;
+  -webkit-text-stroke: 1px #fff;
+  font-weight: 500; }
   @media (max-width: 767px) {
     .cover .front {
       padding: 30px; } }
