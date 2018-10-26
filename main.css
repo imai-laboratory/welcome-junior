@@ -123,3 +123,8 @@ body {
   .access ul {
     list-style: none;
     padding-left: 0; }
+
+.news {
+  text-align: center; }
+  .news ul {
+    list-style: none; }
