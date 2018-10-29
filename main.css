@@ -27,6 +27,9 @@ body {
 .research .statement {
   padding: 32px;
   font-size: 20px; }
+  .research .statement .subtitle {
+    font-weight: 600;
+    font-size: 24px; }
 
 .research .group-introduction {
   text-align: center;
@@ -52,6 +55,8 @@ body {
 
 .research .picture {
   padding: 16px; }
+  .research .picture img {
+    margin-top: 12px; }
 
 .feature .col-md-4 {
   padding: 16px; }
