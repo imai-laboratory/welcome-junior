@@ -41,6 +41,10 @@ body {
   .statement {
     padding: 32px;
     font-size: 20px;
+    .subtitle {
+      font-weight: 600;
+      font-size: 24px;
+    }
   }
   .group-introduction {
     text-align: center;
@@ -73,6 +77,9 @@ body {
   }
   .picture {
     padding: 16px;
+    img {
+      margin-top: 12px;
+    }
   }
 }
 
