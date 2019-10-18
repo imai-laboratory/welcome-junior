@@ -55,9 +55,10 @@ body {
     font-size: 16px; }
 
 .research .picture {
-  padding: 16px; }
+  padding: 32px; }
   .research .picture img {
-    margin-top: 12px; }
+    width: 100%;
+    margin-bottom: 32px; }
 
 .feature .col-md-4 {
   padding: 16px; }
