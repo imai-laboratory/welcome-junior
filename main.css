@@ -142,3 +142,8 @@ body {
   text-align: center; }
   .news ul {
     list-style: none; }
+
+.d-flex {
+  display: flex; }
+  .d-flex img {
+    width: 50% !important; }
