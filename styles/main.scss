@@ -259,3 +259,11 @@ body {
 ul {
   list-style: none;
 }
+
+.d-flex {
+  display: flex;
+  img {
+    width: 50% !important;
+  }
+}
+
