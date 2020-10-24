@@ -223,6 +223,7 @@ body {
 
   .content {
     font-size: 20px;
+    margin: 0 auto;
 
     li {
       margin: 10px 0;
@@ -235,6 +236,7 @@ body {
   
   .content {
     font-size: 20px;
+    margin: 0 auto;
 
     p {
       margin: 1em 0;
@@ -257,8 +259,12 @@ body {
 }
 
 .demo {
+  .top {
+    text-align: center;
+    font-size: 18px;
+  }
   .demo-box {
-    width: 90%;
+    width: 100%;
     margin: 10px auto;
     transition: box-shadow 300ms 0s ease;
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1);
@@ -270,24 +276,33 @@ body {
     .right {
       padding-left: 5px;
     }
+
     span {
- 
       background:linear-gradient(transparent 60%, #ff6 60%);
-   
     }
-    img {
-      width: 100%;
-      padding: 10px;
+    
+    .img-box {
+      vertical-align: middle;
+      img {
+        padding: 10px;
+        max-width: 100%;
+      }
     }
+
     .intro {
-      margin: 30px 10px;
+      margin: 0;
+      height: 100%;
       .title {
         font-size: 20px;
         font-weight: bold;
         text-align: center;
+        margin: 0 20px;
+        padding: 30px 0;
       }
       .caption {
         font-size: 18px;
+        margin: 10px 30px;
+        text-indent: 1em;
       }
     }
 
@@ -301,12 +316,6 @@ ul {
   list-style: none;
 }
 
-.d-flex {
-  display: flex;
-  img {
-    width: 50% !important;
-  }
-}
 
 .modal{
   display: none;
@@ -316,7 +325,7 @@ ul {
   width: 100%;
 }
 .modal__bg{
-  background: rgba(0,0,0,0.8);
+  background: rgba(0,0,0,0.5);
   height: 100vh;
   position: absolute;
   width: 100%;
@@ -328,6 +337,15 @@ ul {
   position: absolute;
   top: 50%;
   transform: translate(-50%,-50%);
-  width: 60%;
+  width: 80%;
+
+  video {
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+  }
+
 }
 
