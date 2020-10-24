@@ -19,6 +19,15 @@ body {
   .red {
     color: #f44336;
   }
+
+  .bold {
+    font-weight: bold;
+  }
+  
+  .annotation {
+    font-size: 0.8em;
+    color: #999;
+  }
 }
 
 .green-background {
@@ -327,6 +336,27 @@ body {
 
     &:hover {
       box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
+.resouces {
+
+  .cover {
+    background-image: url("./images/GPU.jpg");
+    background-size: contain;
+    background-repeat: repeat-x;
+    padding: 50px 0;
+  }
+  .content {
+    font-size: 20px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+
+    .bottom {
+      text-align: right;
     }
   }
 }
