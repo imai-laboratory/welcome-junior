@@ -47,7 +47,7 @@ body {
 }
 
 .row {
-  
+  width: 100%
 }
 
 .research {
@@ -234,8 +234,14 @@ body {
     font-size: 20px;
     margin: 0 auto;
 
-    li {
-      margin: 10px 0;
+    table {
+      margin: auto;
+      font-size: 16px;
+      border-collapse: separate;
+      border-spacing: 20px 3px;
+      td {
+        text-align: left;
+      }
     }
   }
 }
@@ -244,7 +250,7 @@ body {
   text-align: center;
   
   .content {
-    font-size: 20px;
+    font-size: 16px;
     margin: 0 auto;
 
     p {
@@ -349,7 +355,7 @@ body {
     padding: 50px 0;
   }
   .content {
-    font-size: 20px;
+    font-size: 16px;
     margin: 0 auto;
     background-color: #fff;
     box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
