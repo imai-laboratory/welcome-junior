@@ -2,8 +2,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <html>
   <head>
-    <title>2020年度新メンバー募集ページ</title>
-
+    <title>2021年度新メンバー募集ページ</title>
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+    </script>
+    <script src="./main.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href='http://fonts.googleapis.com/css?family=Roboto:900,600,500,400' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="main.css">
@@ -32,11 +36,28 @@
       <div>
         <div class="row">
           <div class="content">
-            <ul>
-              <li>10/20(Tue) <a href="#全体説明会"><strong>全体説明会についての情報を追加しました！</strong></a></li>
-              <li>10/19(Mon) <a href="#オンライン懇談会"><strong>オンライン懇談会についての情報を追加しました！</strong></a></li>
-              <li>10/19(Mon) <a href="#forb3"><strong>B3の皆さんへを追加しました！</strong></a></li>
-            </ul>
+            <table>
+              <tr>
+                <td>10/24(Sat)</td>
+                <th><a href="#gpu">今井研が所有する計算資源の情報を追加しました！</a></th>
+              </tr>
+              <tr>
+                <td>10/24(Sat)</td>
+                <th><a href="#demo">今井研で行われている研究についての情報を追加しました！</a></th>
+              </tr>
+              <tr>
+                <td>10/20(Tue)</td>
+                <th><a href="#session">全体説明会についての情報を追加しました！</a></th>
+              </tr>
+              <tr>
+                <td>10/19(Mon)</td>
+                <th><a href="#reception">オンライン懇談会についての情報を追加しました！</a></th>
+              </tr>
+              <tr>
+                <td>10/19(Mon)</td>
+                <th><a href="#forb3">B3の皆さんへを追加しました！</a></th>
+              </tr>
+            </table>
           </div>
         </div>
       </div>
@@ -113,6 +134,7 @@
           </div>
         </div>
       </div>
+    </div>
 
     <div class="container feature">
       <div>
@@ -177,7 +199,229 @@
       </div>
     </div>
 
-    
+    <div class="container resouces">
+      <p class="section-title" id="gpu">RESOUCES</p>
+      <div class="cover">
+        <div class="content">
+          <p>2台のGPUサーバと5台以上のタワー型マシンを保有しており、GPUの数は<span class="red bold">計30個以上</span>です。</p>
+          <p>特にGPUサーバは<span class="red bold">計14個</span>の高性能GPU<span class="annotation">(1)</span>を搭載しており非常に強力な計算資源となっています。</p>
+          <p>また、より強力な計算資源を必要とする研究に関しては、クラウドGPUサーバABCI<span class="annotation">(2)</span>の利用も可能です。</p>
+          <div class="annotation bottom">(1) NVIDIA Quadro RTX 8000 x6, NVIDIA Quadro RTX 6000 x8 (2) Intel Xeon Gold 6148 x2 (40 core), NVIDIA Tesla V100 x4</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container demo">
+      <p class="section-title" id="demo">DEMO</p>
+      <div class="top">
+        <p>今井研究室で行われている研究の一部を紹介します</p>
+        <p>画像をクリックで拡大表示、または動画が再生されます</p>
+        <p class="red bold">紹介されている研究はまだ一部です！　準備が出来しだいどんどん研究を追加していきます！</p>
+      </div>
+      <div class="demo-box">
+        <div class="row">
+          <div class="col-md-6 left d-flex align-items-center">
+            <div class="img-box">
+              <a class="js-modal-open" href="" data-target="Okuoka"><img src="images/demos/Okuoka.png"><i class="far fa-play-circle"></i></a>
+              <div id="Okuoka" class="modal js-modal">
+                <div class="modal__bg js-modal-close"></div>
+                <div class="modal__content">
+                  <video src="images/demos/Okuoka.mp4" controls></video>
+                  <a class="js-modal-close" href="">閉じる</a>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="col-md-6 right d-flex align-items-center">
+            <div class="intro">
+              <p class="title"><span>遠隔操作ロボットにおける遠隔操作と<br>自律動作の操作衝突回避</span></p>
+              <div class="caption">
+                <p>遠隔地との円滑なコミュニケーションを実現するための手段として、遠隔操作ロボットが有用である。また、頷きなどの動作を自律化することで操作負荷を削減し、対話を円滑にすることが示されている。一方で、自律化によって遠隔操作者の意図と合致しない自律動作と遠隔操作の間で操作衝突が生じる問題があった。</p>
+                <p>本研究では、調停モデルABAMを用いて、遠隔操作に則して適応的に自律動作を抑制することで、操作衝突の回避と可能な限りの自律化の両立を実現した。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="demo-box">
+        <div class="row">
+          <div class="col-md-6 left d-flex align-items-center">
+            <div class="intro">
+              <p class="title"><span>「自分の行動は相手からどう見られているか？」<br>を推測するPublicSelfモデル</span></p>
+              <div class="caption">
+                <p>人は他者の行動を見て、「相手は何を考えているのか？どうしたいのか？」といった心の内を推測する能力（心の理論）を持っていると言われている。</p>
+                <p>PublicSelfモデルは推測される側の視点に立って、「自分の行動は相手からどう見られているのか？」を推測する過程を計算機的にモデル化したものである。</p>
+                <p>PublicSelfモデルを応用することで、逆に相手から特定の見られ方をされたいときにはどう行動すればよいのかを考えることもできます。</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 right d-flex align-items-center">
+            <div class="img-box">
+              <a class="js-modal-open" href="" data-target="Fukuchi"><img src="images/demos/Fukuchi.png"><i class="far fa-play-circle"></i></a>
+              <div id="Fukuchi" class="modal js-modal">
+                <div class="modal__bg js-modal-close"></div>
+                <div class="modal__content">
+                  <video src="images/demos/Fukuchi.mp4" controls></video>
+                  <a class="js-modal-close" href="">閉じる</a>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="demo-box">
+        <div class="row">
+          <div class="col-md-6 left d-flex align-items-center">
+            <div class="img-box">
+              <a class="js-modal-open" href="" data-target="Abe"><img src="images/demos/Abe.jpg"></a>
+              <div id="Abe" class="modal js-modal">
+                <div class="modal__bg js-modal-close"></div>
+                <div class="modal__content">
+                  <img src="images/demos/Abe.jpg">
+                  <a class="js-modal-close" href="">閉じる</a>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="col-md-6 right d-flex align-items-center">
+            <div class="intro">
+              <p class="title"><span>データの生成や変換を得意とする<br>深層ニューラルネットワーク”GAN”の紹介</span></p>
+              <div class="caption">
+                Generative Adversarial Networks (GAN)は、2014年にGoodfellow氏によって提案された、データの生成や変換を得意する深層ニューラルネットワークである。
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="demo-box">
+        <div class="row">
+          <div class="col-md-6 left d-flex align-items-center">
+            <div class="intro">
+              <p class="title"><span>「誰でも使えるコントローラ」実現に向けて</span></p>
+              <div class="caption">
+                <p>現在、コントローラやインタフェースの操作方法はあらかじめデザインされており、それを使うユーザは操作方法を覚え、慣れなければならない。</p>
+                <p>こうした現状だと、覚えるのが難しい人や、そもそもデザインされた操作が難しい人は、操作を諦めなければならない。</p>
+                <p>そこで、ユーザの操作に対して”システム側が”慣れていくことで、各々の好きな操作方法をシステムに覚えさせることができる新しいコントローラを提案する。</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 right d-flex align-items-center">
+            <div class="img-box">
+              <a class="js-modal-open" href="" data-target="Satogata"><img src="images/demos/Satogata.jpg"></a>
+              <div id="Satogata" class="modal js-modal">
+                <div class="modal__bg js-modal-close"></div>
+                <div class="modal__content">
+                  <img src="images/demos/Satogata.jpg">
+                  <a class="js-modal-close" href="">閉じる</a>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="demo-box">
+        <div class="row">
+          <div class="col-md-6 left d-flex align-items-center">
+            <div class="img-box">
+              <a class="js-modal-open" href="" data-target="Otake"><img src="images/demos/Otake.jpg"></a>
+              <div id="Otake" class="modal js-modal">
+                <div class="modal__bg js-modal-close"></div>
+                <div class="modal__content">
+                  <img src="images/demos/Otake.jpg">
+                  <a class="js-modal-close" href="">閉じる</a>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="col-md-6 right d-flex align-items-center">
+            <div class="intro">
+              <p class="title"><span>文脈参照と状況参照を加味した指示語の推定</span></p>
+              <div class="caption">
+                <p>人同士が対面で会話をする場合、会話中に登場した事柄や話題に触れながら話す文脈参照や、会話参加者の周囲に存在する物や出来事に触れながら話す状況参照が頻繁に起こり、時として双方が混在している。現状の対話システムにおける発話文処理では、ある発話に対して文脈と状況のどちらを参照対象とすべきか決定できず、文脈参照と状況参照の双方が混在する対話タスクを扱うことは難しい。</p>
+                <p>この研究では、対話が逐次的に進む中で複数の発話解釈候補を確率的に探索する手法をもとに、文脈参照と状況参照の双方に由来する解釈候補の中から相応しい解釈を見つける手法を提案した。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="demo-box">
+        <div class="row">
+          <div class="col-md-6 left d-flex align-items-center">
+            <div class="intro">
+              <p class="title"><span>対話の中で発話の意味を徐々に理解していく研究</span></p>
+              <div class="caption">
+                <p>この研究は、このように、人間が「ああ、この人はこういうことを言っていたのか」というように逐次的に対話の中で情報を更新していく処理を、AIにもさせるという研究である。</p>
+                  <p>明示的な質問を繰り返す現代のロボットよりも、暗黙的に情報を処理することができるので、より人間らしいロボットを目指すことができる。</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 right d-flex align-items-center">
+            <div class="img-box">
+              <a class="js-modal-open" href="" data-target="Yoshino"><img src="images/demos/Yoshino.jpg"></a>
+              <div id="Yoshino" class="modal js-modal">
+                <div class="modal__bg js-modal-close"></div>
+                <div class="modal__content">
+                  <img src="images/demos/Yoshino.jpg">
+                  <a class="js-modal-close" href="">閉じる</a>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="demo-box">
+        <div class="row">
+          <div class="col-md-6 left d-flex align-items-center">
+            <div class="img-box">
+              <a class="js-modal-open" href="" data-target="Hongo"><img src="images/demos/Hongo.jpg"></a>
+              <div id="Hongo" class="modal js-modal">
+                <div class="modal__bg js-modal-close"></div>
+                <div class="modal__content">
+                  <img src="images/demos/Hongo.jpg">
+                  <a class="js-modal-close" href="">閉じる</a>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="col-md-6 right d-flex align-items-center">
+            <div class="intro">
+              <p class="title"><span>対話支援に向けた言語情報と画像情報の対応付けによる話者のアテンション可視化</span></p>
+              <div class="caption">
+                <p>人と人との対話において、お互いが話している話題の認識に齟齬が生じてしまうと、対話が成立しないという問題がしばしば起こり得る。対話における相互の認識のズレを解消するために、話者の環境に対するアテンションを推定し可視化することで、対話の参加者同士での話題の共有を支援することができると考える。</p>
+                <p>この研究では、ベクトル表現を用いて対話の中の発言を表す言語情報と対話の状況を表す画像情報を対応付けることで、話者のアテンションを推定し、画像上でアテンションを強調させる可視化手法を提案した。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="demo-box">
+        <div class="row">
+          <div class="col-md-6 left d-flex align-items-center">
+            <div class="intro">
+              <p class="title"><span>人間の違和感推定モデル「PredGaze」</span></p>
+              <div class="caption">
+                <p>人間は自分の予測通りに動くものよりも、予想に反するものに強く関心を覚える。</p>
+                <p>本研究では人間のエージェントに対する予測視線動作の誤差に対して確率分布と分散を考慮することで、人間の違和感をモデル化した。</p>
+                <p>これにより人間の注意を向けたい場所に選択的に向けることが可能になった。</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 right d-flex align-items-center">
+            <div class="img-box">
+              <a class="js-modal-open" href="" data-target="Otsuka"><img src="images/demos/Otsuka.jpg"></a>
+              <div id="Otsuka" class="modal js-modal">
+                <div class="modal__bg js-modal-close"></div>
+                <div class="modal__content">
+                  <img src="images/demos/Otsuka.jpg">
+                  <a class="js-modal-close" href="">閉じる</a>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
 
     
 
@@ -185,13 +429,13 @@
       <p class="section-title">SCHEDULE</p>
       <div>
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-4">
             <p class="month">October-November</p>
           </div>
 
-          <div class="col-md-6 right-column">
+          <div class="col-md-8 right-column">
             <div class="events">
-              <p class="event-name" id="全体説明会">全体説明会</p>
+              <p class="event-name" id="session">全体説明会</p>
               <div>
                 情報工学科の研究室が合同で行う説明会です<br>
                 日程は以下の通りです
@@ -211,28 +455,30 @@
 
                 </ul>
               </div>
+            </div>
             <div class="events">
-              <p class="event-name" id="オンライン懇談会">オンライン懇談会</p>
-              <div>
-                WebExを使って、先輩や教授と話せる貴重な機会です！<br>
-                日程は以下の通りです
-                <ul>
-                  <li>10/29(Thu) 12:15-13:00</li>
-                  <li>11/04(Wed) 12:15-13:00</li>
-                  <li>11/10(Tue) 12:15-13:00</li>
-                </ul>
-                懇談会に参加希望の方は<a href="https://forms.gle/XKU6RhNLamwJPSp76" target="_blank">こちら</a>から申し込みをしてください！
-              </div>
+            <p class="event-name" id="reception">オンライン懇談会</p>
+            <div>
+              WebExを使って、先輩や教授と話せる貴重な機会です！<br>
+              日程は以下の通りです
+              <ul>
+                <li>10/29(Thu) 12:15-13:00</li>
+                <li>11/04(Wed) 12:15-13:00</li>
+                <li>11/10(Tue) 12:15-13:00</li>
+              </ul>
+              懇談会に参加希望の方は<a href="https://forms.gle/XKU6RhNLamwJPSp76" target="_blank">こちら</a>から申し込みをしてください！
+            </div>
             </div>
           </div>
         </div>
 
+
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-4">
             <p class="month">January</p>
           </div>
 
-          <div class="col-md-6 right-column">
+          <div class="col-md-8 right-column">
             <div class="events">
               <p class="event-name">Final</p>
               <div>
@@ -243,11 +489,11 @@
         </div>
 
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-4">
             <p class="month">February</p>
           </div>
 
-          <div class="col-md-6 right-column">
+          <div class="col-md-8 right-column">
             <div class="events">
               <p class="event-name">Lintaraction</p>
               <div>
@@ -258,11 +504,11 @@
         </div>
 
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-4">
             <p class="month">March</p>
           </div>
 
-          <div class="col-md-6 right-column">
+          <div class="col-md-8 right-column">
             <div class="events">
               <p class="event-name">Training</p>
               <div>
@@ -273,11 +519,11 @@
         </div>
 
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-4">
             <p class="month">April</p>
           </div>
 
-          <div class="col-md-6 right-column">
+          <div class="col-md-8 right-column">
             <div class="events">
               <p class="event-name">New Semester</p>
               <p class="event-name">Appreciating Cherry Blossoms</p>
@@ -289,11 +535,11 @@
         </div>
 
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-4">
             <p class="month">May</p>
           </div>
 
-          <div class="col-md-6 right-column">
+          <div class="col-md-8 right-column">
             <div class="events">
               <p class="event-name">Softball Championship</p>
               <div>
@@ -306,11 +552,11 @@
         </div>
 
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-4">
             <p class="month">June</p>
           </div>
 
-          <div class="col-md-6 right-column">
+          <div class="col-md-8 right-column">
             <div class="events">
               <p class="event-name">Reading Articles</p>
               <div>
@@ -321,11 +567,11 @@
         </div>
 
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-4">
             <p class="month">July</p>
           </div>
 
-          <div class="col-md-6 right-column">
+          <div class="col-md-8 right-column">
             <div class="events">
               <p class="event-name">Presentation</p>
               <p class="event-name">Farewell Party</p>
@@ -341,11 +587,11 @@
         </div>
 
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-4">
             <p class="month">August</p>
           </div>
 
-          <div class="col-md-6 right-column">
+          <div class="col-md-8 right-column">
             <div class="events">
               <p class="event-name">Curry Party</p>
               <p class="event-name">Bachelor Thesis Startup</p>
@@ -358,11 +604,11 @@
         </div>
 
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-4">
             <p class="month">September</p>
           </div>
 
-          <div class="col-md-6 right-column">
+          <div class="col-md-8 right-column">
             <div class="events">
               <p class="event-name">Summer Camp</p>
               <div>
@@ -377,11 +623,11 @@
         </div>
 
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-4">
             <p class="month">October</p>
           </div>
 
-          <div class="col-md-6 right-column">
+          <div class="col-md-8 right-column">
             <div class="events">
               <p class="event-name">Yagami Festival</p>
               <div>
@@ -392,11 +638,11 @@
         </div>
 
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-4">
             <p class="month">November</p>
           </div>
 
-          <div class="col-md-6 right-column">
+          <div class="col-md-8 right-column">
             <div class="events">
               <p class="event-name">Futsal Championship</p>
               <div>
@@ -407,11 +653,11 @@
         </div>
 
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-4">
             <p class="month">December</p>
           </div>
 
-          <div class="col-md-6 right-column">
+          <div class="col-md-8 right-column">
             <div class="events">
               <p class="event-name">Bachelor Thesis Report</p>
               <div>
@@ -422,11 +668,11 @@
         </div>
 
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-4">
             <p class="month">January</p>
           </div>
 
-          <div class="col-md-6 right-column">
+          <div class="col-md-8 right-column">
             <div class="events">
               <p class="event-name">Bachelor Thesis Presentation</p>
               <div>
