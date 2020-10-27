@@ -238,19 +238,19 @@ body {
   .demo .demo-box:hover {
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.1); }
 
-.resouces .cover {
+.resources .cover {
   background-image: url("./images/GPU.jpg");
   background-size: contain;
   background-repeat: repeat-x;
   padding: 50px 0; }
 
-.resouces .content {
+.resources .content {
   font-size: 16px;
   margin: 0 auto;
   background-color: #fff;
   box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
   padding: 10px; }
-  .resouces .content .bottom {
+  .resources .content .bottom {
     text-align: right; }
 
 ul {
