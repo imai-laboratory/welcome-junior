@@ -18,10 +18,10 @@
     "url": "https://github.com/imai-laboratory/welcome-junior/issues"
   },
   "homepage": "https://github.com/imai-laboratory/welcome-junior#readme",
-  "dependencies": {
-    "node-sass": "^7.0.3"
-  },
   "devDependencies": {
     "gh-pages": "^4.0.0"
+  },
+  "dependencies": {
+    "sass": "^1.55.0"
   }
 }
