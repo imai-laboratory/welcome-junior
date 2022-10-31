@@ -23,7 +23,7 @@ body {
   .bold {
     font-weight: bold;
   }
-  
+
   .annotation {
     font-size: 0.8em;
     color: #999;
@@ -81,7 +81,7 @@ body {
         font-size: 20px;
       }
     }
-    
+
     div {
       font-size: 20px;
       .description {
@@ -105,7 +105,7 @@ body {
     .feature-panel {
       transition: box-shadow 300ms 0s ease;
       box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1);
-      height: 210px;
+      height: 100%;
       padding: 12px;
 
       .feature-title {
@@ -248,7 +248,7 @@ body {
 
 .forb3 {
   text-align: center;
-  
+
   .content {
     font-size: 16px;
     margin: 0 auto;
@@ -283,7 +283,7 @@ body {
     margin: 10px auto;
     transition: box-shadow 300ms 0s ease;
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1);
-    
+
     .left {
       padding-right: 5px;
     }
@@ -295,7 +295,7 @@ body {
     span {
       background:linear-gradient(transparent 60%, #ff6 60%);
     }
-    
+
     .img-box {
       vertical-align: middle;
       img {
