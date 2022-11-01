@@ -93,7 +93,7 @@ body {
 .feature .col-md-4 .feature-panel {
   transition: box-shadow 300ms 0s ease;
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1);
-  height: 210px;
+  height: 100%;
   padding: 12px;
 }
 .feature .col-md-4 .feature-panel .feature-title {
