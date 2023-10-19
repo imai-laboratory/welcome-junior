@@ -351,9 +351,13 @@ ul {
   width: 100%;
 }
 
-.example {
-  display: table;
-  margin: 0 auto;
+.ok_pattern2_section {
+  text-align: center;
+}
+
+.ok_pattern2 {
+  text-align: left;
+  display: inline-block;
 }
 
 /*# sourceMappingURL=main.css.map */
