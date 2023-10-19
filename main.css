@@ -351,13 +351,21 @@ ul {
   width: 100%;
 }
 
-.ok_pattern2_section {
+.sample {
+  margin: 16px auto;
   text-align: center;
+  display: block;
+  border: 1px solid #000;
 }
 
-.ok_pattern2 {
-  text-align: left;
+.sample ul {
+  padding-left: 0;
+  list-style: none;
   display: inline-block;
+}
+
+.sample ul li {
+  text-align: left;
 }
 
 /*# sourceMappingURL=main.css.map */
