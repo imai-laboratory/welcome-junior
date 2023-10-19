@@ -355,6 +355,7 @@ ul {
   margin: 16px auto;
   text-align: center;
   display: block;
+  border: none;
 }
 
 .sample ul {
