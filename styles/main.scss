@@ -404,11 +404,18 @@ ul {
 
 }
 
-.ok_pattern2_section{
-  text-align: center;
+.sample {
+	margin: 16px auto;
+	text-align: center;
+	display: block;
+	border: 1px solid #000;
+}
+.sample ul {
+	padding-left: 0;
+	list-style: none;
+	display: inline-block;
+}
+.sample ul li {
+	text-align: left;
 }
 
-.ok_pattern2{
-  text-align:left;
-  display: inline-block;
-}
