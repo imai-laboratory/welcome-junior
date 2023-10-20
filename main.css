@@ -225,6 +225,7 @@ body {
 }
 .forb3 .sample {
   text-align: left;
+  display: inline-block;
 }
 
 .our-lab {
