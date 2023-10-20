@@ -128,13 +128,13 @@ body {
       .image {
         width: 60%;
         float: right;
-        margin-top: 90px;
+        margin-top: 120px;
         box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.1);
       }
       .image-hidden {
         width: 60%;
         float: right;
-        margin-top: 90px;
+        margin-top: 120px;
         position: absolute;
         right: 0;
         opacity: 0;
@@ -147,7 +147,7 @@ body {
   }
 
   .front {
-    position: static;
+    position: absolute;
     padding: 60px;
     -webkit-text-stroke: 1px #fff;
     font-weight: 500;
