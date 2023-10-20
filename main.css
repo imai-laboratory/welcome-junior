@@ -130,11 +130,6 @@ body {
   -webkit-text-stroke: 1px #fff;
   font-weight: 500;
 }
-@media (max-width: 767px) {
-  .cover .front {
-    padding: 30px;
-  }
-}
 .cover .front p {
   font-size: 60px;
 }
