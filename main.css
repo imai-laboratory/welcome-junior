@@ -125,7 +125,7 @@ body {
   opacity: 1;
 }
 .cover .front {
-  position: absolute;
+  position: static;
   padding: 60px;
   -webkit-text-stroke: 1px #fff;
   font-weight: 500;
