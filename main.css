@@ -47,13 +47,16 @@ body {
 }
 
 .research .statement {
-  padding: 32px;
-  font-size: 20px;
+  margin: 32px;
+  font-size: 16px;
 }
 .research .statement .subtitle {
   text-align: center;
   font-weight: 600;
   font-size: 24px;
+}
+.research .statement .keywords {
+  text-align: center;
 }
 .research .group-introduction {
   text-align: center;
