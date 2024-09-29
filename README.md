@@ -28,5 +28,5 @@ http://127.0.0.1:8080/dist/
   $ ffmpeg -i input.mp4 -vf "format=yuv420p" output.mp4
   ```
 
-- 過去の動画像はpast_images/に移動する
+- 過去の動画像は`past_images/`に移動する
 
