@@ -22,10 +22,10 @@ $ npm run server
 http://127.0.0.1:8080/dist/
 
 ## caution
-- githubにアップロードする前に動画サイズを小さくするべき。\
+- githubにアップロードする前に動画サイズを小さくするべき。
   - ffmpegなどを使うことを推奨。 以下参考例。
-  ```example
-  ffmpeg -i input.mp4 -vf "format=yuv420p" output.mp4
+  ```
+  $ ffmpeg -i input.mp4 -vf "format=yuv420p" output.mp4
   ```
 
 - 過去の動画像はpast_images/に移動する
