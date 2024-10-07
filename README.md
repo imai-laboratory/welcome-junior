@@ -29,4 +29,6 @@ http://127.0.0.1:8080/dist/
   ```
 
 - 過去の動画像は`past_images/`に移動する
+  - ただしクレストのホームページに動画を引用しているので、`past_images/`に移動する際は注意すること。
+  - http://crest.ailab.ics.keio.ac.jp/context/
 
