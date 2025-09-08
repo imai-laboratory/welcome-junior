@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { defineProps } from 'vue';
-
 type Props = {
 	/** 表示するテキスト */
 	label: string;
