@@ -1,11 +1,13 @@
+<script setup lang="ts">
+import { useResolveAssetPath } from '@/utils/resolveAssetPath';
+
+const coverImage = useResolveAssetPath('images/member2024.jpg');
+</script>
+
 <template>
 	<section class="relative">
 		<div class="relative h-[60vh] md:h-[80vh] overflow-hidden">
-			<img
-				src="/images/member2024.jpg"
-				alt="cover"
-				class="w-full h-full object-cover"
-			/>
+			<img :src="coverImage" alt="cover" class="w-full h-full object-cover" />
 			<div class="absolute inset-0 bg-black/40"></div>
 			<div class="absolute inset-0 grid place-items-center">
 				<div class="text-center tracking-widest text-white">

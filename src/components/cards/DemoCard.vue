@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue';
 import MediaModal from '@/components/modals/MediaModal.vue';
+import { useResolveAssetPath } from '@/utils/resolveAssetPath';
 
 const {
 	title,
@@ -21,6 +22,11 @@ const {
 
 const open = ref<boolean>(false);
 const isVideo = computed<boolean>(() => !imgOnly && !!video);
+
+const resolvedThumb = computed<string>(() => useResolveAssetPath(thumb));
+const resolvedVideo = computed<string>(() =>
+	video ? useResolveAssetPath(video) : '',
+);
 
 const openModal = () => {
 	open.value = true;
@@ -49,7 +55,7 @@ const openModal = () => {
 				>
 					<span class="block aspect-video md:h-full md:aspect-auto">
 						<img
-							:src="thumb"
+							:src="resolvedThumb"
 							:alt="title"
 							class="w-full h-full object-cover md:object-contain bg-black/5"
 						/>
@@ -93,8 +99,8 @@ const openModal = () => {
 		<!-- モーダル -->
 		<MediaModal
 			v-model="open"
-			:video-src="isVideo ? video : ''"
-			:img-src="!isVideo ? thumb : ''"
+			:video-src="isVideo ? resolvedVideo : ''"
+			:img-src="!isVideo ? resolvedThumb : ''"
 			:alt="title"
 		/>
 	</article>

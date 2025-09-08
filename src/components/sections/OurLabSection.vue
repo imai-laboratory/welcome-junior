@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import SectionWrapper from '@/components/SectionWrapper.vue';
+import { useResolveAssetPath } from '@/utils/resolveAssetPath';
 
 type LabRoom = {
 	src: string;
@@ -32,7 +33,7 @@ const rooms: LabRoom[] = [
 			>
 				<div class="aspect-[3/2] w-full overflow-hidden bg-slate-50">
 					<img
-						:src="room.src"
+						:src="useResolveAssetPath(room.src)"
 						:alt="room.alt"
 						class="w-full h-full object-cover object-center"
 						loading="lazy"

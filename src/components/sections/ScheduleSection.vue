@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import SectionWrapper from '@/components/SectionWrapper.vue';
 import { ref } from 'vue';
+import { useResolveAssetPath } from '@/utils/resolveAssetPath';
 
 type ScheduleEvent = {
 	id?: string;
@@ -186,7 +187,7 @@ const groups = ref<ScheduleGroup[]>([
 							<img
 								v-for="(src, i) in ev.images"
 								:key="i"
-								:src="src"
+								:src="useResolveAssetPath(src)"
 								:alt="`${ev.name} image ${i + 1}`"
 								class="h-48 rounded-lg object-cover"
 								loading="lazy"
