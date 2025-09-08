@@ -10,7 +10,7 @@ type AccessItem = {
 const items: AccessItem[] = [
 	{
 		label: 'ホームページ',
-		href: 'http://www.ailab.ics.keio.ac.jp',
+		href: 'https://www.ailab.ics.keio.ac.jp',
 		iconClass: 'fa-solid fa-house',
 	},
 	{
