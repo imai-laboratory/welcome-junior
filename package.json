@@ -1,27 +1,38 @@
 {
-  "name": "welcome-junior",
-  "version": "1.0.0",
-  "description": "webapge for recruiting rebels",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build-scss": "sass styles/main.scss dist/main.css",
-    "deploy": "npm run build-scss && gh-pages -d dist",
-    "server": "npm run build-scss && http-server"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/imai-laboratory/welcome-junior.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/imai-laboratory/welcome-junior/issues"
-  },
-  "homepage": "https://github.com/imai-laboratory/welcome-junior#readme",
-  "devDependencies": {
-    "gh-pages": "^6.3.0",
-    "http-server": "^14.1.1",
-    "sass": "^1.92.1"
-  }
+	"name": "welcome-junior",
+	"private": true,
+	"version": "2.0.0",
+	"description": "Webpage for recruiting rebels",
+	"type": "module",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/imai-laboratory/welcome-junior.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/imai-laboratory/welcome-junior/issues"
+	},
+	"homepage": "https://github.com/imai-laboratory/welcome-junior#readme",
+	"engines": {
+		"node": ">=22"
+	},
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"format": "prettier --write \"**/*.{js,ts,vue,css,html,json,md,yml}\"",
+		"format:check": "prettier --check \"**/*.{js,ts,vue,css,html,json,md,yml}\""
+	},
+	"dependencies": {
+		"vue": "3.5.18"
+	},
+	"devDependencies": {
+		"@fortawesome/fontawesome-free": "^7.0.1",
+		"@tailwindcss/vite": "^4.1.13",
+		"@vitejs/plugin-vue": "^6.0.1",
+		"prettier": "^3.6.2",
+		"tailwindcss": "^4.1.13",
+		"vite": "^7.1.2",
+		"vite-plugin-static-copy": "^3.1.2"
+	}
 }
