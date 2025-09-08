@@ -13,9 +13,6 @@ export default defineConfig({
 			targets: [{ src: 'public/past_images/*', dest: './images' }],
 		}),
 	],
-	build: {
-		copyPublicDir: false,
-	},
 	resolve: {
 		alias: {
 			'@': path.resolve(__dirname, './src'),
