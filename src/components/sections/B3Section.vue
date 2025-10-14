@@ -12,23 +12,16 @@ type B3Session = {
 const b3Schedule: B3Session[] = [
 	{
 		id: 'session-1',
-		displayDate: '10/29(Tue)',
-		time: '18:10–20:00',
+		displayDate: '10/28(Tue)',
+		time: '18:15–',
 		place: 'DR-8(14-218)',
-		title: '説明会',
+		title: '研究室見学・懇談会（途中参加OK）',
 	},
 	{
 		id: 'session-2',
-		displayDate: '11/05(Tue)',
-		time: '18:10–20:00',
+		displayDate: '11/04(Tue)',
+		time: '18:15-',
 		place: 'DR-8(14-218)',
-		title: '説明会',
-	},
-	{
-		id: 'session-3',
-		displayDate: '11/11(Mon)',
-		time: '18:15–19:30頃',
-		place: '14-517',
 		title: '研究室見学・懇談会（途中参加OK）',
 	},
 ];
