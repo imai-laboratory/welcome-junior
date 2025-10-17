@@ -23,7 +23,7 @@ const groups = ref<ScheduleGroup[]>([
 			{
 				id: 'session',
 				name: '見学会',
-				detail: '2024年度の日程は以下の通りです',
+				detail: '2025年度の日程は以下の通りです',
 				bullets: [
 					'10/28(Tue) 18:15 @DR-8(14-218) — 研究室見学・懇談会(途中参加OK)',
 					'11/4(Tue) 18:15 @DR-8(14-218) — 研究室見学・懇談会(途中参加OK)',

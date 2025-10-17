@@ -9,13 +9,12 @@ type NewsItem = {
 
 const news: NewsItem[] = [
 	{
-		date: '2024/11/05(Tue)',
-		title: '研究室見学会についての記載を更新しました！',
-		link: '#schedule',
-	},
-	{
 		date: '2025/09/09(Tue)',
 		title: 'Webサイトをリニューアルしました！',
+	},
+	{
+		date: '2025/10/17(Fri)',
+		title: '研究室見学会についての記載を更新しました！',
 	},
 ];
 </script>
