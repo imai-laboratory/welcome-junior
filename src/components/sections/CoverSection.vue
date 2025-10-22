@@ -10,7 +10,7 @@ const coverImage = useResolveAssetPath('images/member2024.jpg');
 			<img :src="coverImage" alt="cover" class="w-full h-full object-cover" />
 			<div class="absolute inset-0 bg-black/40"></div>
 			<div class="absolute inset-0 grid justify-center items-end">
-				<div class="text-center tracking-widest text-white pb-8 md:pb-40">
+				<div class="text-center tracking-widest text-white pb-12 md:pb-40">
 					<p class="text-sm md:text-base">INTERACTIVE</p>
 					<p class="text-4xl md:text-6xl font-extrabold">
 						<span class="font-black">A</span>RTIFICIAL
