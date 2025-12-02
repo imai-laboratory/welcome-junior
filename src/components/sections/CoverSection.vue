@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useResolveAssetPath } from '@/utils/resolveAssetPath';
 
-const coverImage = useResolveAssetPath('images/member2024.jpg');
+const coverImage = useResolveAssetPath('images/member2025.jpg');
 </script>
 
 <template>
