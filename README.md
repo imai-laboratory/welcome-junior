@@ -32,6 +32,9 @@ mise install
 
 # 依存パッケージをインストール
 pnpm install
+
+# 初回のみ実行してください
+pnpm prepare
 ```
 
 ## Development (local server)
