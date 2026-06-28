@@ -1,8 +1,12 @@
-# .github/workflows/ci.yml
 name: CI
 
 on:
   push:
+    branches:
+      - '**' # すべてのブランチへのプッシュで起動
+  pull_request:
+    branches:
+      - main # mainへのPRが作られたときも起動
 
 permissions:
   contents: read
@@ -18,12 +22,12 @@ jobs:
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
         with:
-          version: 9.9.0
+          version: 11.9.0
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '22'
+          node-version: '26.4.0'
           cache: 'pnpm'
 
       - name: Install dependencies
@@ -42,12 +46,12 @@ jobs:
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
         with:
-          version: 9.9.0
+          version: 11.9.0
 
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: '22'
+          node-version: '26.4.0'
           cache: 'pnpm'
 
       - name: Install dependencies
