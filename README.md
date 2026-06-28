@@ -12,21 +12,25 @@ Webpage for recruiting rebels
 
 ## Setup
 
-Node.js v22 を推奨（`.nvmrc` あり）
+バージョン管理ツールに mise を使用しています。Node.js および pnpm のバージョンは `mise.toml` で管理されています。
+
+### 1. mise のインストール（未導入の場合）
+
+macOS (Homebrew) の場合:
 
 ```bash
-nvm use
+brew install mise
 ```
 
-pnpm をグローバルにインストール（pnpmがない場合）:
+※ その他の環境は [mise公式ドキュメント](https://mise.jdx.dev/getting-started.html#installing-mise-cli) を参照してください。また、シェルへのアクティベート設定（`echo 'eval "$(mise activate zsh)"' >> ~/.zshrc` など）を行っておくと、ディレクトリ移動時に自動でバージョンが切り替わるため便利です。
+
+### 2. ツールのインストールと依存関係の解決
 
 ```bash
-npm install -g pnpm
-```
+# Node.js と pnpm をインストール
+mise install
 
-依存をインストール:
-
-```bash
+# 依存パッケージをインストール
 pnpm install
 ```
 
