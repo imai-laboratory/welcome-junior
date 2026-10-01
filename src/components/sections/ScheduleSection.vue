@@ -18,15 +18,15 @@ type ScheduleGroup = {
 
 const groups = ref<ScheduleGroup[]>([
 	{
-		month: 'October-November',
+		month: 'October',
 		events: [
 			{
 				id: 'session',
 				name: '見学会',
-				detail: '2025年度の日程は以下の通りです',
+				detail: '2026年度の日程は以下の通りです',
 				bullets: [
-					'10/28(Tue) 18:15 @DR-8(14-218) — 研究室見学・懇談会(途中参加OK)',
-					'11/4(Tue) 18:15 @DR-8(14-218) — 研究室見学・懇談会(途中参加OK)',
+					'10/27（火曜日）18:10 @DR-8(14-218) — 研究室見学・懇談会(途中参加OK)',
+					'10/30（金曜日）18:10 @DR-8(14-218) — 研究室見学・懇談会(途中参加OK)',
 				],
 			},
 		],
