@@ -1,6 +1,11 @@
 <script setup lang="ts">
 import SectionWrapper from '@/components/SectionWrapper.vue';
 import ColorChip from '@/components/chips/ColorChip.vue';
+import { useResolveAssetPath } from '@/utils/resolveAssetPath';
+
+const socialIntelligenceGoalsImage = useResolveAssetPath(
+	'images/social-intelligence-goals.png',
+);
 </script>
 
 <template>
@@ -32,9 +37,20 @@ import ColorChip from '@/components/chips/ColorChip.vue';
 				/>
 			</p>
 
-			<p class="leading-relaxed text-slate-700">
-				人と共に社会の一員として活動できるAIエージェントやロボットには、人が暗黙的に行っているソーシャルスキル(社会の中で円滑に行動できる能力）が必要です。人間であっても、発達障害傾向があり、ソーシャルな行動が不得意な人は社会の中で生きづらさを感じてしまいます。場合によってはトレーニングが必要になります。大規模言語モデルをはじめとする生成AIにより、柔軟に文脈・状況を読み取り、知識を活用できるようになったAIエージェントやロボットが次に必要となる機能は、ソーシャルスキルの獲得です。闇雲にマルチモーダルな学習データを集めるだけでは、ソーシャルスキルを扱えるようにはなりません。今井研究室では、30個のソーシャルスキルを、ソーシャル・インテリジェンス・ゴールとして用意し、人と円滑にコミュニケーションできる次世代のAIシステムの実現を目指します(左図)。シミュレーションをベースとしたモデル開発から、人とインタラクションのできる実機システムの研究開発まで行います。
-			</p>
+			<div class="grid items-start gap-6 lg:grid-cols-2 lg:gap-8">
+				<p class="leading-relaxed text-slate-700">
+					人と共に社会の一員として活動できるAIエージェントやロボットには、人が暗黙的に行っているソーシャルスキル(社会の中で円滑に行動できる能力）が必要です。人間であっても、発達障害傾向があり、ソーシャルな行動が不得意な人は社会の中で生きづらさを感じてしまいます。場合によってはトレーニングが必要になります。大規模言語モデルをはじめとする生成AIにより、柔軟に文脈・状況を読み取り、知識を活用できるようになったAIエージェントやロボットが次に必要となる機能は、ソーシャルスキルの獲得です。闇雲にマルチモーダルな学習データを集めるだけでは、ソーシャルスキルを扱えるようにはなりません。今井研究室では、30個のソーシャルスキルを、ソーシャル・インテリジェンス・ゴールとして用意し、人と円滑にコミュニケーションできる次世代のAIシステムの実現を目指します(右図)。シミュレーションをベースとしたモデル開発から、人とインタラクションのできる実機システムの研究開発まで行います。
+				</p>
+				<img
+					:src="socialIntelligenceGoalsImage"
+					alt="Social Intelligence Goals：社会的知覚・社会的理解・社会的表現と対話・社会的協調・社会的関係の5分野に分類した30のソーシャルスキル"
+					width="1122"
+					height="1402"
+					class="w-full h-auto"
+					loading="lazy"
+					decoding="async"
+				/>
+			</div>
 		</div>
 	</SectionWrapper>
 </template>
