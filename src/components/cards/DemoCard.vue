@@ -89,6 +89,7 @@ const openModal = () => {
 					<h3 class="text-base md:text-lg font-semibold mb-2">
 						{{ title }}
 					</h3>
+					<slot name="icons" />
 					<p class="text-sm leading-relaxed text-slate-700">
 						{{ caption }}
 					</p>
