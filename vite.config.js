@@ -15,7 +15,13 @@ export default defineConfig(({ mode }) => {
 			vue(),
 			tailwindcss(),
 			viteStaticCopy({
-				targets: [{ src: 'public/past_images/*', dest: './images' }],
+				targets: [
+					{
+						src: 'public/past_images/**/*',
+						dest: './images',
+						rename: { stripBase: 2 },
+					},
+				],
 			}),
 		],
 		resolve: {
