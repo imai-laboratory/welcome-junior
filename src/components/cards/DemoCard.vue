@@ -57,7 +57,10 @@ const openModal = () => {
 						<img
 							:src="resolvedThumb"
 							:alt="title"
-							class="w-full h-full object-cover md:object-contain bg-black/5"
+							class="w-full h-full bg-black/5"
+							:class="
+								isVideo ? 'object-cover md:object-contain' : 'object-contain'
+							"
 						/>
 					</span>
 
