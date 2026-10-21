@@ -25,7 +25,7 @@
 		"format:check": "prettier --check \"**/*.{js,ts,vue,css,html,json,md,yml}\""
 	},
 	"dependencies": {
-		"vue": "3.5.39"
+		"vue": "3.5.44"
 	},
 	"devDependencies": {
 		"@fortawesome/fontawesome-free": "^7.3.0",
