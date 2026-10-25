@@ -42,7 +42,7 @@ const demos = [
 		caption:
 			'人の視線を理解することは、ロボットが人間に寄り添ってコミュニケーションすることの基礎になります。単純に人の目線を認識するだけでなく、どの物体に人が注目しているかを認識することで、ロボットはより良い行動が行えるようになります。',
 		thumb: '/images/demos_2026/gaze360.png',
-		video: '/images/demos_2026/gaze360.mov',
+		video: '/images/demos_2026/gaze-3.mp4',
 		socialSkills: [
 			{ id: 1, label: '見る', viewBox: '17 159 174 173' },
 			{ id: 4, label: '視線理解', viewBox: '566 159 173 173' },
